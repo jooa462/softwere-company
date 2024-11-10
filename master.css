@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: repeat(10 1fr);
+  grid-template-rows: 50px auto auto;
+  grid-template-areas: "logo logo logo nav nav nav nav nav nav nav ";
+  background-color: #eee;
+}
+
+img {
+  width: 70px;
+  height: 50px;
+  grid-area: logo;
+  margin-left: 20px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(15, 148, 172);
+}
+
+li a {
+  list-style: none;
+  display: inline-block;
+  margin-inline: 20px;
+  margin-block: 5px;
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  margin-inline: 40px;
+  margin-block: 10px;
+  color: white;
+}
